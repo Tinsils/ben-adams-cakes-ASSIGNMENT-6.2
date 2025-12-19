@@ -1,0 +1,116 @@
+header nav {
+    width: 100%;
+    padding: 22px;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #EB8A93, #95B1D9);
+    z-index: 999;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li a {
+    margin: 0 20px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all ease-in-out 0.55s;
+}
+
+header {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+header {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Button reset */
+.custom-toggler {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+}
+
+.custom-toggler:focus {
+  box-shadow: none;
+}
+
+/* Hamburger base */
+.hamburger {
+  position: relative;
+  width: 28px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+/* Top & bottom lines */
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* X animation */
+.custom-toggler[aria-expanded="true"] .hamburger {
+  background-color: transparent;
+}
+
+.custom-toggler[aria-expanded="true"] .hamburger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.custom-toggler[aria-expanded="true"] .hamburger::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* FULL reset of Bootstrap toggler button */
+.custom-toggler {
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  min-width: unset !important;
+  min-height: unset !important;
+}
+
+/* Remove focus/active styles */
+.custom-toggler:focus,
+.custom-toggler:active {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.custom-toggler {
+  padding: 10px;
+}
