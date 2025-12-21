@@ -1,0 +1,22 @@
+#product-price {
+  font-weight: bold;
+}
+
+.product-image-wrapper {
+  width: 100%;
+  max-width: 270px;
+  height: 250px;
+  overflow: hidden;
+}
+
+#product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#optional-extras {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+}

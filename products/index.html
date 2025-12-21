@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/products/product-styles.css">
+  <link rel="stylesheet" href="/top-nav.css">
+  <title id="page-title">Product | Ben Adam's Cakes</title>
+</head>
+<body>
+    <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="/favicon.png"
+           class="logo me-2"
+           alt="Ben Adam's Cakes Logo"
+           width="50"
+           height="50">
+      <span class="logo-text">ben adam's cakes</span>
+    </a>
+
+    <!-- Hamburger button -->
+    <button
+  class="navbar-toggler custom-toggler"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#topNav"
+  aria-controls="topNav"
+  aria-expanded="false"
+  aria-label="Toggle navigation">
+
+  <span class="hamburger"></span>
+</button>
+    <!-- Collapsible menu -->
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/cakes">Cakes</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+</header>
+
+  <div class="container mt-5">
+
+  <div class="row align-items-center mt-4">
+
+  <!-- Image column (LEFT) -->
+  <div class="col-12 col-md-5 d-flex justify-content-center justify-content-md-start">
+    <div class="product-image-wrapper">
+      <img id="product-image" alt="Cake image">
+    </div>
+  </div>
+
+  <!-- Text column (RIGHT) -->
+  <div class="col-12 col-md-7 text-center text-md-start mt-4 mt-md-0">
+    <h1 id="product-name" class="mb-3"></h1>
+    <p id="product-description"></p>
+
+    <p id="product-price" class="fw-bold fs-4 mt-3"></p>
+
+    <div id="optional-extras" class="mt-4 text-start"></div>
+    <br>
+    
+    <p id="allergens"></p>
+  </div>
+</div>
+
+  <script src="/products/products.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous">
+  </script>
+
+</body>
+</html>
