@@ -15,7 +15,6 @@ header nav ul{
 }
 header nav ul li a {
     margin: 0 20px;
-    color: #ffffff;
     font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
@@ -30,7 +29,6 @@ header {
 
 header {
     font-size: 30px;
-    color: #ffffff;
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
@@ -39,7 +37,6 @@ header {
 /* Button reset */
 .custom-toggler {
   border: none;
-  background: none;
   padding: 0.5rem;
 }
 
@@ -54,7 +51,6 @@ header {
   height: 2px;
   background-color: #000;
   display: block;
-  transition: background-color 0.3s ease;
 }
 
 /* Top & bottom lines */
@@ -94,7 +90,6 @@ header {
 
 /* FULL reset of Bootstrap toggler button */
 .custom-toggler {
-  background-color: transparent !important;
   border: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
@@ -108,7 +103,6 @@ header {
 .custom-toggler:active {
   outline: none;
   box-shadow: none;
-  background-color: transparent;
 }
 
 .custom-toggler {

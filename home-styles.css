@@ -1,3 +1,41 @@
+/* Body styles */
+html, body {
+  background-color: #F4E9BC !important;
+  margin: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Cream wave – desktop */
+.hero-wave {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -93px;
+
+  height: 260px;
+  width: auto;
+  min-width: 1200px;
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Hide wave on small devices */
+@media (max-width: 767.98px) {
+  .hero-wave {
+    display: none;
+  }
+}
+
+/* Desktop and up – lock position */
+@media (min-width: 768px) {
+  .hero-wave {
+    bottom: -93px;
+    height: 260px;
+  }
+}
+
 /* Background video styles */
 .background-video {
   position: static;
