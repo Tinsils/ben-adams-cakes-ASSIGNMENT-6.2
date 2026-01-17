@@ -2,8 +2,11 @@
 html, body {
   background-color: #F4E9BC !important;
   margin: 0;
-  overflow-x: hidden;
   max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /* Cookie Google font */
@@ -61,28 +64,181 @@ html, body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
-/* Background cake icons */
-.cakes-section {
-  position: relative;
-  width: 100%;
+/* Subscribe section styles */
+
+.subscribe-section {
+  background-color: #f2ccc4;
+  text-align: left;
+  padding: 10px 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
-.cakes-background {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.subscribe-top-text {
+  font-family: "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left: 25px;
+  color: #3b4559;
+  margin-top: 20px;
+}
 
-  width: 100vw;
-  min-height: 100px;        /* ← IMPORTANT */
-  /* or: min-height: 300px; */
+.subscribe-email-input {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  width: 1000px;
+  max-width: 80%;
+}
+.subscribe-email-input:hover {
+  border-color: #000000;
+}
+.subscribe-email-input:focus {
+  outline: none;
+  border-color: #000000;
+}
 
-  background-image: url("/images/home-page/graphic-icon-background.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+.subscribe-submit-button {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 0px;
+  color: #ffffff;
+  background-color: #092953;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
 
-  z-index: 0;
+/* Footer Styles */
+.main-footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 3rem 2rem 1rem;
+    margin-top: auto; /* Push footer to bottom */
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+/* Make the first column stack content vertically and keep the copyright
+   text at the bottom-left under the site name */
+.footer-content .footer-section:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Footer second chance text move slightly up to be inline with sub headings on the right of the footer */
+.footer-content .footer-section:first-child h2 {
+    margin-top: 10px;
+}
+
+/* Footer heart icon moved slightly further down */
+.footer-content .footer-section:first-child h2 i {
+    position: relative;
+    top: 3px;
+}
+
+.footer-content .footer-section:first-child .footer-bottom {
+    margin-top: 1rem;
+    align-self: flex-start;
+    text-align: left;
+    color: #a0a0a0;
+}
+
+.footer-section h3 {
+    color: #000000;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.social-links a {
+    color: #a0a0a0;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #333;
+    text-align: left;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+#english-uk-text {
+    font-weight: bold;
+}
+
+/* Update body to ensure footer stays at bottom */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+}
+
+
+.footer {
+    position: absolute;
+    border-top: solid 1px #ffffff;
+    background-color: #000000;
+    width: 80%;
+    bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 /* Disable hover effects on touch devices */
