@@ -1,0 +1,53 @@
+/* Body styles */
+html, body {
+  background-color: #F4E9BC !important;
+  margin: 0;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Cookie Google font */
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header */
+.header-text {
+  font-size: 100px;
+  color: #000;
+}
+
+/* Product card hover effect */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.extra-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Disable hover effects on touch devices */
+@media (hover: hover) {
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* Mobile Safari fix */
+@supports (-webkit-touch-callout: none) {
+  .background-video {
+    height: 100svh;
+  }
+}
