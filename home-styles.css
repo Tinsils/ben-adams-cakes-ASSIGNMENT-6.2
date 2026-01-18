@@ -117,6 +117,40 @@ html {
   margin-bottom: 20px;
 }
 
+/* Review section styles */
+.reviews {
+  background-color: #e8f9f7;
+  text-align: left;
+  padding: 10px 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.card1 {
+  margin-left: 30px;
+}
+
+.card2 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.card3 {
+  margin-right: 30px;
+}
+
+/* Review author */
+.review-author {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Review stars */
+.fa-star {
+  color: #FFD700; /* Gold color for stars */
+  font-size: 13px;
+}
+
 /* Footer Styles */
 .main-footer {
     background-color: #F4E9BC;
@@ -126,6 +160,7 @@ html {
     margin-left: calc(-50vw + 50%);
     width: 100vw;
     box-sizing: border-box;
+    border-top: solid 1px #000000;
 }
 
 .footer-content {
