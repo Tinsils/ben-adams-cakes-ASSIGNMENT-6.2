@@ -22,6 +22,24 @@ html {
   color: #000;
 }
 
+/* Allergies Section */
+.allergies {
+  background-color: #f2ccc4;
+  text-align: left;
+  padding: 10px 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* Movie Themed Section */
+.movie-themed {
+  background-color: #c4edf2;
+  text-align: left;
+  padding: 10px 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
 /* Product card hover effect */
 .product-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;

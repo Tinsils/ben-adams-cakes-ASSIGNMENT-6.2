@@ -13,6 +13,36 @@ const products = {
     name: "Red Velvet Cake",
     image: "images/cakes/red-velvet-cake.png",
     description: "Smooth red velvet cake with cream cheese frosting."
+  },
+  "lemon-sponge": {
+    name: "Lemon Sponge",
+    image: "images/cakes/lemon-sponge.png",
+    description: "A lovely Lemon Sponge with fresh lemons topped with a zesty lemon glaze."
+  },
+  "berry-cake": {
+    name: "Berry Cake",
+    image: "images/cakes/berry-cake.png",
+    description: "This berry cake is packed with fresh mixed berries and light frosting."
+  },
+  "brownie": {
+    name: "Brownie",
+    image: "images/cakes/brownie.png",
+    description: "Delicious fudgy brownies with a crackly top, perfect for chocolate lovers."
+  },
+  "disney-cake": {
+    name: "Disney Cake",
+    image: "images/cakes/disney-cake.png",
+    description: "A mickey mouse themed cake perfect for any Disney fan!"
+  },
+  "star-wars-cake": {
+    name: "Star Wars Cake",
+    image: "images/cakes/star-wars-cake.png",
+    description: "A galaxy-themed cake perfect for any Star Wars fan!"
+  },
+  "minecraft-cake": {
+    name: "Minecraft Cake",
+    image: "images/cakes/minecraft-cake.png",
+    description: "A pixelated cake perfect for any Minecraft fan!"
   }
 };
 

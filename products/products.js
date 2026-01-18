@@ -54,6 +54,109 @@ const products = {
     ],
     price: "£20.00",
     allergens: ["gluten", "eggs", "dairy"]
+  },
+
+  "lemon-sponge": {
+    name: "Lemon Sponge",
+    image: "/images/cakes/lemon-sponge.png",
+    description: "Light and fluffy lemon sponge with a citrusy twist.",
+    extras: [
+      { id: "herb", label: "Herbs", price: 1 },
+      { id: "extra-drizzle", label: "Extra Drizzle", price: 3 },
+    ],
+    price: "£10.00",
+    allergens: ["nuts", "eggs"]
+  },
+
+  "berry-cake": {
+    name: "Berry Cake",
+    image: "/images/cakes/berry-cake.png",
+    description: "A delicious berry cake with a fruity twist.",
+    extras: [
+      { id: "sprinkles", label: "Sprinkles", price: 1 },
+      { id: "raspberries", label: "Raspberries", price: 5 },
+      {
+        id: "message",
+        label: "Custom Cake Message",
+        price: 5,
+        type: "text",
+        placeholder: "e.g. Happy New Year!"
+      }
+    ],
+    price: "£13.00",
+    allergens: ["gluten"]
+  },
+
+  "brownie": {
+    name: "Brownie",
+    image: "/images/cakes/brownie.png",
+    description: "Hard to resist chocolate brownie a soft inside.",
+    extras: [
+      { id: "strawberries", label: "Strawberries", price: 3 },
+      { id: "caster-sugar", label: "Caster Sugar", price: 4 },
+      {
+        id: "message",
+        label: "Grahpic Icon",
+        price: 7,
+        type: "text",
+        placeholder: "Describe the icon you want"
+      }
+    ],
+    price: "£14.00",
+    allergens: ["gluten"]
+  },
+
+  "disney-cake": {
+    name: "Disney Cake",
+    image: "/images/cakes/disney-cake.png",
+    description: "A magical Disney cake with a whimsical design.",
+    extras: [
+      { id: "gold-icing", label: "Gold Icing", price: 3 },
+      {
+        id: "message",
+        label: "Different Character",
+        price: 5,
+        type: "text",
+        placeholder: "Please specify the character"
+      }
+    ],
+    price: "£20.00",
+    allergens: ["gluten", "eggs", "dairy"]
+  },
+
+  "star-wars-cake": {
+    name: "Star Wars Cake",
+    image: "/images/cakes/star-wars-cake.png",
+    description: "A magical Star Wars cake with a whimsical design.",
+    extras: [
+      { id: "gold-icing", label: "Gold Icing", price: 3 },
+      {
+        id: "message",
+        label: "Different Character",
+        price: 5,
+        type: "text",
+        placeholder: "Please specify the character"
+      },
+      {
+        id: "message",
+        label: "Custom Message",
+        price: 5,
+        type: "text",
+        placeholder: "e.g. May the Force be with you"
+      }
+    ],
+    price: "£30.00",
+    allergens: ["gluten", "eggs", "dairy"]
+      
+  },
+
+  "minecraft-cake": {
+    name: "Minecraft Cake",
+    image: "/images/cakes/minecraft-cake.png",
+    description: "A magical Minecraft cake with a whimsical design.",
+    price: "£500.00",
+    allergens: ["many pixels"]
+      
   }
 };
 
