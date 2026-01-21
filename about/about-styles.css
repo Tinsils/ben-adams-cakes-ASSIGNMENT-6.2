@@ -1,0 +1,36 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ben-adams-pfp {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .john-ark-container {
+        flex-direction: column-reverse;
+    }
+    
+    .ben-adams-pfp {
+        width: 250px;
+        height: 250px;
+    }
+}
