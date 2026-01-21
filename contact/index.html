@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google fonts connection-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <!-- Font Awesome connection-->
+  <script src="https://kit.fontawesome.com/bdb35a54f4.js" crossorigin="anonymous"></script>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png">
   <!-- Link to CSS -->
-  <link rel="stylesheet" href="/contact-styles.css">
+  <link rel="stylesheet" href="/contact/contact-styles.css">
   <link rel="stylesheet" href="/top-nav.css">
   <link rel="stylesheet" href="/footer-styles.css">
   <!-- Bootstrap Link -->
@@ -24,8 +30,8 @@
       <img src="/favicon.png"
            class="logo me-2"
            alt="Ben Adam's Cakes Logo"
-           width="50"
-           height="50">
+           width="150"
+           height="150">
       <span class="logo-text">ben adam's cakes</span>
     </a>
 
@@ -54,9 +60,86 @@
   </div>
 </nav>
 </header>
+<br>
+    <main class="contact-main">
+        <h1 class="header-text text-center cookie-regular">Contact us!</h1>
+        <p class="header-description text-center">If you have any questions, feedback, or inquiries, please feel free to reach out to us using the form below. We value your input and look forward to hearing from you!</p>
+        <form class="contact-form" action="https://formspree.io/f/mdaaynyp" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
 
-    <!-- Main content -->
-    <h1>Welcome to the Contact page</h1>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+<footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2 style='font-family:"Lobster", sans-serif;'>Ben Adam's Cakes</h2>
+                <div class="footer-bottom">
+                    <p><i class="fa-regular fa-copyright"></i> 2026 Ben Adam's Cakes Ltd.</p>
+                    <p id="english-uk-text"><i class="fa-solid fa-globe"></i> English (UK)</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Socials</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.twitter.com/" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Index</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/cakes">Cakes</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

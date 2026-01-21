@@ -40,26 +40,22 @@ html {
   margin-left: calc(-50vw + 50%);
 }
 
-/* Product card hover effect */
-.product-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
 .extra-text {
   font-size: 14px;
   font-weight: bold;
   color: #555;
 }
 
-/* Disable hover effects on touch devices */
+/* Product card hover effect */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Only apply hover effects on devices that support hover */
 @media (hover: hover) {
   .product-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
   }
 }
 

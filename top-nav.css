@@ -1,3 +1,35 @@
+/* Desktop: Center the navbar brand */
+.navbar .container-fluid {
+    justify-content: center;
+}
+
+/* Logo sizing - Desktop 150px */
+.logo {
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px !important;
+    height: 150px !important;
+}
+
+/* Mobile: Logo to the left and 75px */
+@media (max-width: 1450px) {
+    .navbar .container-fluid {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        position: relative;
+        margin-top: auto;
+        left: 0;
+        transform: none;
+        margin-right: auto;
+        width: 75px !important;
+        height: 75px !important;
+    }
+}
+
 header nav {
     width: 100%;
     padding: 22px;
@@ -5,9 +37,15 @@ header nav {
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     background-image: linear-gradient(to right, #EB8A93, #95B1D9);
     z-index: 999;
+}
+
+/* Mobile: nav flexbox to space-between for left alignment */
+@media (max-width: 767.98px) {
+    header nav {
+        justify-content: space-between;
+    }
 }
 header nav ul{
     display: flex;
