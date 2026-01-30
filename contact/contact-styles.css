@@ -80,6 +80,10 @@ html {
   box-shadow: 0 0 5px rgba(9, 41, 83, 0.3);
 }
 
+#message {
+  resize: none;
+}
+
 .contact-form button {
   background-color: #7aaad6;
   color: white;
