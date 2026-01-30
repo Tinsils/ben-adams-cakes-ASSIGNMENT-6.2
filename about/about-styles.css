@@ -38,3 +38,23 @@
         height: 250px;
     }
 }
+
+/* Cookie Google font */
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header */
+.header-text {
+  margin-top: 40px;
+  font-size: 100px;
+  color: #000;
+}
+
+/* Styles for the Google Maps iframe */
+.ben-adams-shop {
+    display: block;
+    margin: 40px auto 50px auto;
+}
