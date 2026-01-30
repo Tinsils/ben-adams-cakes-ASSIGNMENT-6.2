@@ -40,6 +40,7 @@ html {
   margin-left: calc(-50vw + 50%);
 }
 
+/* Extra text styling */
 .extra-text {
   font-size: 14px;
   font-weight: bold;
@@ -51,17 +52,10 @@ html {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Only apply hover effects on devices that support hover */
+/* This stops the hover effect on mobile devices */
 @media (hover: hover) {
   .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-  }
-}
-
-/* Mobile Safari fix */
-@supports (-webkit-touch-callout: none) {
-  .background-video {
-    height: 100svh;
   }
 }

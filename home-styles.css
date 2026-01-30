@@ -110,7 +110,7 @@ html {
   margin-top: 10px;
 }
 
-/* Desktop button alignment */
+/* Subscribe button alignment on different devices */
 @media (min-width: 768px) {
   .subscribe-submit-button {
     display: inline-block;
@@ -183,7 +183,7 @@ html {
   }
 }
 
-/* Mobile Safari fix */
+/* Background Video mobile safari fix */
 @supports (-webkit-touch-callout: none) {
   .background-video {
     height: 100svh;

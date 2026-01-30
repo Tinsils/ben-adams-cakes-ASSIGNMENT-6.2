@@ -28,10 +28,11 @@
 
 /* Footer second chance text move slightly up to be inline with sub headings on the right of the footer */
 .footer-content .footer-section:first-child h2 {
-    margin-top: 10px;
+    margin-top: -5px;
     font-weight: bold;
 }
 
+/* All the individual footer stylings */
 .footer-content .footer-section:first-child .footer-bottom {
     margin-top: 1rem;
     align-self: flex-start;
@@ -67,6 +68,7 @@
     color: #ffffff;
 }
 
+/* Social media icons styling */
 .social-links {
     display: flex;
     gap: 1rem;
@@ -92,6 +94,7 @@
     font-size: 0.9rem;
 }
 
+/* English text styling */
 #english-uk-text {
     font-weight: bold;
 }

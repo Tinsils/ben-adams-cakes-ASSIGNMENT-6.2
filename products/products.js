@@ -1,4 +1,5 @@
-const products = {
+const products = { // Each products information to be displayed on their product page
+  // Victoria Sponge Cake
   "victoria-sponge": {
     name: "Victoria Sponge",
     image: "/images/cakes/victoria-sponge.png",
@@ -18,6 +19,7 @@ const products = {
     allergens: ["gluten", "eggs", "dairy"]
   },
 
+  // Chocolate Cake
   "chocolate-cake": {
     name: "Chocolate Cake",
     image: "/images/cakes/chocolate-cake.png",
@@ -37,6 +39,7 @@ const products = {
     allergens: ["gluten", "eggs", "dairy", "nuts"]
   },
 
+  // Red velvet cake
   "red-velvet-cake": {
     name: "Red Velvet Cake",
     image: "/images/cakes/red-velvet-cake.png",
@@ -56,6 +59,7 @@ const products = {
     allergens: ["gluten", "eggs", "dairy"]
   },
 
+  // Lemon sponge cake
   "lemon-sponge": {
     name: "Lemon Sponge",
     image: "/images/cakes/lemon-sponge.png",
@@ -68,6 +72,7 @@ const products = {
     allergens: ["nuts", "eggs"]
   },
 
+  // Berry cake
   "berry-cake": {
     name: "Berry Cake",
     image: "/images/cakes/berry-cake.png",
@@ -87,6 +92,7 @@ const products = {
     allergens: ["gluten"]
   },
 
+  // Brownie
   "brownie": {
     name: "Brownie",
     image: "/images/cakes/brownie.png",
@@ -106,6 +112,7 @@ const products = {
     allergens: ["gluten"]
   },
 
+  // Disney cake
   "disney-cake": {
     name: "Disney Cake",
     image: "/images/cakes/disney-cake.png",
@@ -124,6 +131,7 @@ const products = {
     allergens: ["gluten", "eggs", "dairy"]
   },
 
+  // Star Wars cake
   "star-wars-cake": {
     name: "Star Wars Cake",
     image: "/images/cakes/star-wars-cake.png",
@@ -150,6 +158,7 @@ const products = {
       
   },
 
+  // Minecraft cake
   "minecraft-cake": {
     name: "Minecraft Cake",
     image: "/images/cakes/minecraft-cake.png",
@@ -160,14 +169,17 @@ const products = {
   }
 };
 
+// Get product from URL parameter
 const params = new URLSearchParams(window.location.search);
 const productKey = params.get("product");
 const product = products[productKey];
 
+// Changing the pages title to correspond to the product name
 if (product) {
   document.getElementById("page-title").textContent =
     product.name + " | Ben Adam's Cakes";
 
+  // Grabbing all the information about the product and displaying it on the page
   document.getElementById("product-name").textContent = product.name;
   document.getElementById("product-image").src = product.image;
   document.getElementById("product-image").alt = product.name;
@@ -178,11 +190,11 @@ if (product) {
   const extrasContainer = document.getElementById("optional-extras");
   extrasContainer.innerHTML = "";
 
-  // Convert price string (£15.00) → number
+  // Price styles
   const basePrice = Number(product.price.replace("£", ""));
   let totalPrice = basePrice;
 
-  // ---- OPTIONAL EXTRAS ----
+  // Optional extras section
   if (product.extras && product.extras.length > 0) {
     const heading = document.createElement("h5");
     heading.textContent = "Optional extras";
@@ -229,7 +241,7 @@ if (product) {
     });
   }
 
-  // ---- PRICE ----
+  // Price calculation
   const priceEl = document.getElementById("product-price");
   priceEl.textContent = `£${totalPrice.toFixed(2)}`;
 

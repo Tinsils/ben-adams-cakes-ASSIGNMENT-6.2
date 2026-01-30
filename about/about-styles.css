@@ -1,3 +1,4 @@
+/* Styles to keep all the elemenets aligned correctly */
 .about-container {
     display: flex;
     align-items: center;
@@ -7,6 +8,7 @@
     margin: 0 auto;
 }
 
+/* Styles for the photos of Ben Adams and John Ark */
 .ben-adams-pfp {
     border-radius: 50%;
     width: 300px;
@@ -15,10 +17,12 @@
     flex-shrink: 0;
 }
 
+/* About text styles to allow the text to be on the right and left */
 .about-text {
     flex: 1;
 }
 
+/* Styles for mobile devices to allow the photos to be above the text */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
