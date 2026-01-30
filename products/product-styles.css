@@ -3,6 +3,7 @@ body {
   background-color: #ffffff;
 }
 
+/* Styles to prevent horizontal scrolling */
 html {
   overflow-x: hidden;
 }
